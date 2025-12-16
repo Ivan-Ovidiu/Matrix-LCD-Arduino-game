@@ -16,17 +16,16 @@ Bullet Conquest is a matrix-based dungeon crawler where players navigate through
 
 ##  Hardware Components
 ```
-Arduino Board (Uno/Mega)               x1
+Arduino Board (Uno)                    x1
 MAX7219 8x8 LED Matrix Module          x1
 16x2 LCD Display                       x1
 Joystick Module (with button)          x1
 Push Button                            x1
 LDR (Light Dependent Resistor)         x1
-10kΩ Resistor                          x2
-100Ω Resistor                          x1
+220kΩ Resistor                         x3
 10µF Electrolytic Capacitor            x1
 0.1µF Ceramic Capacitor                x1
-Breadboard                             x1
+Breadboard                             x2
 Wires              
 ```
 
@@ -197,7 +196,7 @@ Dedicated pause button handling with debouncing.
 
 #### In-Game Controls
 
-- Joystick: Move player (8 directions)
+- Joystick: Move player (4 directions)
 - Pause Button: Pause game
 - Cover LDR: Activate invincibility (once per game)
 
