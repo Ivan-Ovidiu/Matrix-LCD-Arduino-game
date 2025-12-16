@@ -2,19 +2,16 @@
 An Arduino based dungeon crawler game featuring multiple rooms, enemy bullets, and an light based invincibility mechanic.
 
 ## Table of Contents
-
-Overview
-Hardware Components
-Game Features
-Architecture
-How to Play
-Installation
-Game Mechanics
+- [Overview](#overview)
+- [Hardware Components](#hardware-components)
+- [Game Features](#game-features)
+- [Architecture](#architecture)
+- [How to Play](#how-to-play)
 
 ## Overview
 Bullet Conquest is a matrix-based dungeon crawler where players navigate through 4 interconnected rooms, dodging and defeating enemy bullets while trying to survive. The game features difficulty levels, a scoring system, persistent high scores, and a unique invincibility mechanic activated by covering a light sensor.
 
-##  Hardware Components
+## Hardware Components
 ```
 Arduino Board (Uno)                    x1
 MAX7219 8x8 LED Matrix Module          x1
