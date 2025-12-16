@@ -181,24 +181,18 @@ Monitors ambient light for invincibility trigger.
 Dedicated pause button handling with debouncing.
 
 ### How to Play
-- Main Menu Navigation
-
+#### Main Menu Navigation
 - Up/Down: Navigate menu options
 - Short Press: Select option
-
 - Play: Start new game
 - Difficulty: Change difficulty setting
 - Highscore: View top 3 scores
 - Exit: Exit to title screen
-
 #### In-Game Controls
-
 - Joystick: Move player (4 directions)
 - Pause Button: Pause game
 - Cover LDR: Activate invincibility (once per game)
-
 #### Pause Menu
-
 - Left/Right: Toggle between RESUME and MENU
 - Short Press: Confirm selection
 
