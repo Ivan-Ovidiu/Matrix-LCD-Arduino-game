@@ -70,3 +70,10 @@ Pause Button:
   Enable INPUT_PULLUP in code
 
 ```
+## Wiring diagram
+<img width="2688" height="2280" alt="Matrix Diagram_bb" src="https://github.com/user-attachments/assets/c57cf08b-da04-454d-ba75-27c4eb30a3c6" />
+
+
+## Picture of the setup
+![WhatsApp Image 2025-12-16 at 18 46 04](https://github.com/user-attachments/assets/d1057f2b-aafd-4a0d-855a-02a775693519)
+
