@@ -277,12 +277,6 @@ void handleInGame() {
   
 }  
 
-// Reset all static variables for a new game
-void resetGameStatics() {
-  // This will be used to reset flags when transitioning to a new game
-  // Note: We can't directly reset static variables from here,
-  // so we'll use an external flag that each function checks
-}
 
 //display game stats
 void displayGameStats(){
@@ -336,10 +330,11 @@ void displayGameStats(){
     
     case PLAYING:{ 
 
+
         game.updateInvincibility();
         needsRedraw = false;
 
-        // Check if health or bullets changed
+        //Check if health or bullets changed
         if(oldPlayerHealth != game.playerHealth || oldPlayerHealth == -1 || 
           oldBulletsDefeatedInRoom == -1 || oldBulletsDefeatedInRoom != game.bulletsDefeatedInRoom) {
           needsRedraw = true;
@@ -561,6 +556,8 @@ void play() {
   if (game.inGameState == GAME_FINISHED) {
     return;
   }
+  if(game.playerHealth == 0)
+   game.inGameState = GAME_FINISHED;
   
   if (!gameStarted) {   //beggining of the game setup
      displayCurrentRoom();
@@ -572,7 +569,7 @@ void play() {
   }
   
     //set difficulty based values
-   // game.bulletsRequiredToFinish = game.getBulletsForRoom();
+    game.bulletsRequiredToFinish = game.getBulletsForRoom();
     for (int i = 0; i < MAX_BULLETS; i++) {
       bulleService.bullets[i].setMoveSpeed(game.getBulletSpeed());
 

@@ -58,7 +58,7 @@ public:
   int currentScore;
 
   // game constructor
-  Game() : currentRoom(3),state(EXIT),inGameState(START_ROOM) ,
+  Game() : currentRoom(0),state(EXIT),inGameState(START_ROOM) ,
           bulletsDefeatedInRoom(0), bulletsRequiredToFinish(1), roomCompleted(false),
           isInvincible(false), invincibilityStartTime(0), invincibilityDuration(10000),
            difficulty(MEDIUM), currentScore(0) {
