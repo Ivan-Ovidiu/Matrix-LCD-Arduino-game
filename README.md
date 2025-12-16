@@ -77,25 +77,25 @@ Health System: 3 hearts, lose one per bullet hit (unless invincible)
 Room Transitions: Exit through unlocked doors when room objectives are met
 Dynamic Bullet Spawning: Enemies spawn at varying rates based on difficulty
 
-Difficulty Levels
+- Difficulty Levels
 ```
 Difficulty Bullet_Speed Score_Multiplier Bullets/Room
 Easy       Slower         1x              Fewer bullets
 Medium     Normal         2x              Standard amount
 Hard       Faster         3x              More bullets
 ```
-Special Features
+#### Special Features
 
-Invincibility Mode: Cover the LDR sensor to activate 10 seconds of invincibility
+- **Invincibility Mode**: Cover the LDR sensor to activate 10 seconds of invincibility
 
-Visual indicator: Shield icon on LCD
-No damage from bullets
-One-time activation per game
+- Visual indicator: Shield icon on LCD
+- No damage from bullets
+- One-time activation per game
 
 
-Persistent High Scores: Top 3 scores saved in EEPROM
-Pause System: Pause mid-game with dedicated button
-Victory Animation: Spiral animation on completion
+- Persistent High Scores: Top 3 scores saved in EEPROM
+- Pause System: Pause mid-game with dedicated button
+- Victory Animation: Spiral animation on completion
 
 
 ### Architecture
@@ -117,9 +117,9 @@ PAUSE (accessible from IN_GAME)
 
 ```
 
-1. Game Class
+#### 1. Game Class
 Core game state management and room data.
-Key Properties:
+- Key Properties:
 ```
 cpp
 - state: Current game state (MENU, IN_GAME, PAUSE, etc.)
@@ -131,7 +131,7 @@ cpp
 - rooms[4][8]: Byte arrays representing room layouts
 - isInvincible: Invincibility status
 ```
-Key Methods:
+- Key Methods:
 ```
 cpp
 - setLed(x, y): Turn on LED at position
@@ -141,17 +141,17 @@ cpp
 - getBulletSpeed(): Get bullet movement speed based on difficulty
 - getDifficultyMultiplier(): Get score multiplier
 ```
-2. BulletService Class
+#### 2. BulletService Class
 Manages all bullet spawning, movement, and collision detection.
-Key Responsibilities:
+#### Key functionalities:
 
-Spawn bullets at random positions
-Update bullet positions each frame
-Detect collisions with player
-Handle bullet defeat (collision with walls)
-Control spawn rate based on difficulty
+- Spawn bullets at random positions
+- Update bullet positions each frame
+- Detect collisions with player
+- Handle bullet defeat (collision with walls)
+- Control spawn rate based on difficulty
 
-Key Methods:
+- Key Methods:
 ```
 cpp
 - initialize(): Reset all bullets
@@ -159,9 +159,9 @@ cpp
 - updateBullets(matrixChanged): Move all active bullets
 - shouldSpawn(currentTime): Check if new bullet should spawn
 ```
-3. Joystick Class
+#### 3. Joystick Class
 Handles joystick input with percentage-based directional detection.
-Key Properties:
+- Key Properties:
 ```
 cpp
 - upPercentage, downPercentage: Vertical input (0-100%)
@@ -169,15 +169,15 @@ cpp
 - buttonPress(): Detect short press
 - buttonLongPress(): Detect long press (2+ seconds)
 ```
-4. LDR (Light Sensor) Class
+#### 4. LDR (Light Sensor) Class
 Monitors ambient light for invincibility trigger.
-Key Features:
+#### Key Features:
 
-Calibration on startup
-Threshold-based detection
-Returns boolean light state
+- Calibration on startup
+- Threshold-based detection
+- Returns boolean light state
 
-5. PauseButton Class
+#### 5. PauseButton Class
 Dedicated pause button handling with debouncing.
 
 ### How to Play
