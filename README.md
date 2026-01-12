@@ -1,5 +1,5 @@
 # Bullet Conquest
-An Arduino based dungeon crawler game featuring multiple rooms, enemy bullets, and an light based invincibility mechanic.
+An Arduino based dungeon crawler game developed in Arduino IDE, featuring multiple rooms, enemy bullets, and an light based invincibility mechanic.
 
 ## Table of Contents
 - [Overview](#overview)
