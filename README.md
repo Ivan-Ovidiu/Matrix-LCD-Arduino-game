@@ -29,40 +29,40 @@ Wires
 ### Pin Configuration
 ```
 LCD Display (16x2):
-  RS  → Pin 8
-  EN  → Pin 9
-  D4  → Pin 2
-  D5  → Pin 4
-  D6  → Pin 6
-  D7  → Pin 7
-  VO  → Pin 5 (PWM - brightness control via software)
-  VSS → GND
-  VDD → 5V
-  A   → 5V (backlight anode)
-  K   → GND (backlight cathode)
+  RS   Pin 8
+  EN   Pin 9
+  D4   Pin 2
+  D5   Pin 4
+  D6   Pin 6
+  D7   Pin 7
+  VO   Pin 5 (PWM - brightness control via software)
+  VSS  GND
+  VDD  5V
+  A    5V (backlight anode)
+  K    GND (backlight cathode)
 
 MAX7219 LED Matrix Driver:
-  DIN  → Pin 12
-  CLK  → Pin 11
-  LOAD → Pin 10
-  VCC  → 5V
-  GND  → GND (connect BOTH GND pins!)
+  DIN   Pin 12
+  CLK   Pin 11
+  LOAD  Pin 10
+  VCC   5V
+  GND   GND (connect BOTH GND pins!)
 
 Joystick Module:
-  Button → Pin 13
-  VRx    → A0 (X-axis)
-  VRy    → A1 (Y-axis)
-  VCC    → 5V
-  GND    → GND
+  Button  Pin 13
+  VRx     A0 (X-axis)
+  VRy     A1 (Y-axis)
+  VCC     5V
+  GND     GND
 
 LDR (Light Sensor):
-  One leg → A3
-  One leg → GND
-  A3 → 10kΩ resistor → 5V (pull-up configuration)
+  One leg  A3
+  One leg  GND
+  A3 - 10kΩ resistor - 5V (pull-up configuration)
 
 Pause Button:
-  One leg → PAUSE_BUTTON_PIN (define in header)
-  Other leg → GND
+  One leg - PAUSE_BUTTON_PIN (define in header)
+  Other leg - GND
   Enable INPUT_PULLUP in code
 
 ```
@@ -121,7 +121,6 @@ PAUSE (accessible from IN_GAME)
 Core game state management and room data.
 - Key Properties:
 ```
-cpp
 - state: Current game state (MENU, IN_GAME, PAUSE, etc.)
 - inGameState: Sub-state during gameplay (START_ROOM, PLAYING, FINISH_ROOM, GAME_FINISHED)
 - currentRoom: Current room index (0-3)
@@ -133,7 +132,6 @@ cpp
 ```
 - Key Methods:
 ```
-cpp
 - setLed(x, y): Turn on LED at position
 - clearLed(x, y): Turn off LED at position
 - activateInvincibility(): Start 10-second invincibility
