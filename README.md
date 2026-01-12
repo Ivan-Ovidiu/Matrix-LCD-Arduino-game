@@ -71,7 +71,7 @@ Pause Button:
 
 ### Core Gameplay
 
-4 Unique Rooms: Each with different obstacle layouts
+Four unique rooms: Each with different obstacle layouts
 Progressive Difficulty: Complete rooms by defeating required number of bullets
 Health System: 3 hearts, lose one per bullet hit (unless invincible)
 Room Transitions: Exit through unlocked doors when room objectives are met
