@@ -71,18 +71,18 @@ Pause Button:
 
 ### Core Gameplay
 
-Four unique rooms: Each with different obstacle layouts
-Progressive Difficulty: Complete rooms by defeating required number of bullets
-Health System: 3 hearts, lose one per bullet hit (unless invincible)
-Room Transitions: Exit through unlocked doors when room objectives are met
-Dynamic Bullet Spawning: Enemies spawn at varying rates based on difficulty
+- Four unique rooms: Each with different obstacle layouts <br/>
+- Progressive Difficulty: Complete rooms by defeating required number of bullets <br/>
+- Health System: 3 hearts, lose one per bullet hit (unless invincible) <br/>
+- Room Transitions: Exit through unlocked doors when room objectives are met <br/>
+- Dynamic Bullet Spawning: Enemies spawn at varying rates based on difficulty <br/>
 
-- Difficulty Levels
+### Difficulty Levels <br/>
 ```
-Difficulty Bullet_Speed Score_Multiplier Bullets/Room
-Easy       Slower         1x              Fewer bullets
-Medium     Normal         2x              Standard amount
-Hard       Faster         3x              More bullets
+Difficulty | Bullet speed | Score multiplier | Bullets per room 
+  Easy         Slower           1x               Fewer bullets 
+  Medium       Normal           2x               Standard amount 
+  Hard         Faster           3x               More bullets 
 ```
 #### Special Features
 
