@@ -193,9 +193,7 @@ Dedicated pause button handling with debouncing.
 
 ### Video showcasing the menu
 
-
-https://github.com/user-attachments/assets/44783f4d-aa9f-4d1c-a689-85ca297e72c1
-
+https://github.com/user-attachments/assets/39a364b6-dc92-4962-b1ff-7589f5588083
 
 ### In-Game Controls
 - Joystick: Move player (4 directions)
@@ -214,7 +212,7 @@ https://github.com/user-attachments/assets/44783f4d-aa9f-4d1c-a689-85ca297e72c1
 ![WhatsApp Image 2025-12-16 at 18 46 04](https://github.com/user-attachments/assets/d1057f2b-aafd-4a0d-855a-02a775693519)
 
 ## Aditional pictures of gameplay
-![WhatsApp Image 2026-01-16 at 21 09 45](https://github.com/user-attachments/assets/55588e13-324a-47ca-9412-57fa70214c47)
 
 
+![Gameplay  picture 1](https://github.com/user-attachments/assets/fa74a4b9-46b5-4c7f-b60d-abef88ce20ea)
 
