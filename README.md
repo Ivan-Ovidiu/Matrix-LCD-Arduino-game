@@ -84,7 +84,7 @@ Difficulty | Bullet speed | Score multiplier | Bullets per room
   Medium       Normal           2x               Standard amount 
   Hard         Faster           3x               More bullets 
 ```
-#### Special Features
+### Special Features
 
 - **Invincibility Mode**: Cover the LDR sensor to activate 10 seconds of invincibility
 
@@ -96,6 +96,10 @@ Difficulty | Bullet speed | Score multiplier | Bullets per room
 - Persistent High Scores: Top 3 scores saved in EEPROM
 - Pause System: Pause mid-game with dedicated button
 - Victory Animation: Spiral animation on completion
+
+### Gameplay demo
+
+https://github.com/user-attachments/assets/2ff3b00d-9607-4e4d-afd7-978ea87a4fb2
 
 
 ## Architecture
@@ -186,6 +190,13 @@ Dedicated pause button handling with debouncing.
 - Difficulty: Change difficulty setting
 - Highscore: View top 3 scores
 - Exit: Exit to title screen
+
+### Video showcasing the menu
+
+
+https://github.com/user-attachments/assets/44783f4d-aa9f-4d1c-a689-85ca297e72c1
+
+
 ### In-Game Controls
 - Joystick: Move player (4 directions)
 - Pause Button: Pause game
@@ -201,4 +212,9 @@ Dedicated pause button handling with debouncing.
 
 ## Picture of the setup
 ![WhatsApp Image 2025-12-16 at 18 46 04](https://github.com/user-attachments/assets/d1057f2b-aafd-4a0d-855a-02a775693519)
+
+## Aditional pictures of gameplay
+![WhatsApp Image 2026-01-16 at 21 09 45](https://github.com/user-attachments/assets/55588e13-324a-47ca-9412-57fa70214c47)
+
+
 
