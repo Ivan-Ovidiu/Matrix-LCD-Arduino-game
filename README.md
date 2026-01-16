@@ -98,7 +98,7 @@ Difficulty | Bullet speed | Score multiplier | Bullets per room
 - Victory Animation: Spiral animation on completion
 
 
-### Architecture
+## Architecture
 
 ```
 MENU
@@ -117,7 +117,7 @@ PAUSE (accessible from IN_GAME)
 
 ```
 
-#### 1. Game Class
+### 1. Game Class
 Core game state management and room data.
 - Key Properties:
 ```
@@ -139,7 +139,7 @@ Core game state management and room data.
 - getBulletSpeed(): Get bullet movement speed based on difficulty
 - getDifficultyMultiplier(): Get score multiplier
 ```
-#### 2. BulletService Class
+### 2. BulletService Class
 Manages all bullet spawning, movement, and collision detection.
 #### Key functionalities:
 
@@ -157,7 +157,7 @@ cpp
 - updateBullets(matrixChanged): Move all active bullets
 - shouldSpawn(currentTime): Check if new bullet should spawn
 ```
-#### 3. Joystick Class
+### 3. Joystick Class
 Handles joystick input with percentage-based directional detection.
 - Key Properties:
 ```
@@ -167,7 +167,7 @@ cpp
 - buttonPress(): Detect short press
 - buttonLongPress(): Detect long press (2+ seconds)
 ```
-#### 4. LDR (Light Sensor) Class
+### 4. LDR (Light Sensor) Class
 Monitors ambient light for invincibility trigger.
 #### Key Features:
 
@@ -175,22 +175,22 @@ Monitors ambient light for invincibility trigger.
 - Threshold-based detection
 - Returns boolean light state
 
-#### 5. PauseButton Class
+### 5. PauseButton Class
 Dedicated pause button handling with debouncing.
 
-### How to Play
-#### Main Menu Navigation
+## How to Play
+### Main Menu Navigation
 - Up/Down: Navigate menu options
 - Short Press: Select option
 - Play: Start new game
 - Difficulty: Change difficulty setting
 - Highscore: View top 3 scores
 - Exit: Exit to title screen
-#### In-Game Controls
+### In-Game Controls
 - Joystick: Move player (4 directions)
 - Pause Button: Pause game
 - Cover LDR: Activate invincibility (once per game)
-#### Pause Menu
+### Pause Menu
 - Left/Right: Toggle between RESUME and MENU
 - Short Press: Confirm selection
 
